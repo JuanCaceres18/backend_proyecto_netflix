@@ -1,3 +1,5 @@
+# Manejan las solicitudes HTTPS y brindan una respuesta adecuada
+
 from flask import jsonify, request
 from app.models import Movie
 

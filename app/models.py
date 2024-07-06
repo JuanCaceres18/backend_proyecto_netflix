@@ -1,3 +1,5 @@
+# Representación de las estructuras con las que trabaja mi app
+
 from app.database import get_db
 
 class Movie:

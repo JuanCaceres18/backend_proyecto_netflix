@@ -1,3 +1,5 @@
+# Manejo de configuración y conexión a base de datos
+
 import os
 import mysql.connector
 from flask import g
@@ -11,7 +13,7 @@ DATABASE_CONFIG = {
     "user":os.getenv("DB_USERNAME"),
     "host":os.getenv("DB_HOST"),
     "password":os.getenv("DB_PASSWORD"),
-    "port":os.getenv("DB_PORT",3306),
+    "port":os.getenv("DB_PORT",3306), # Si la variable no está definida, proporciono un valor por defecto
     "database":os.getenv("DB_NAME")
 }
 
